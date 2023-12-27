@@ -1,10 +1,10 @@
 
-RewriteOptions inherit
-RewriteEngine On
-# RewriteCond %{SERVER_PORT} 80
-# RewriteRule ^(.*)$ https://www.neoma.media/$1 [R,L]
-RewriteCond %{HTTP_HOST} ^neoma.media [NC]
-RewriteRule ^(.*)$ https://www.neoma.media/$1 [L,R=301]
+# RewriteOptions inherit
+# RewriteEngine On
+# # RewriteCond %{SERVER_PORT} 80
+# # RewriteRule ^(.*)$ https://www.neoma.media/$1 [R,L]
+# RewriteCond %{HTTP_HOST} ^neoma.media [NC]
+# RewriteRule ^(.*)$ https://www.neoma.media/$1 [L,R=301]
 
 <IfModule mod_rewrite.c>
 # RewriteEngine On
